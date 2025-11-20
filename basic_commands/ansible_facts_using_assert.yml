@@ -9,5 +9,3 @@
          - ansible_memory_mb.real.total >= 2048
         fail_msg: "'ansible_memory_mb.real.total' is too low"
         success_msg: "'ansible_memory_mb.real.total' is ok"
-
-

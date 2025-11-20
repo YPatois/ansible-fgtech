@@ -105,8 +105,9 @@ export DISTR='ubuntu'
 export VERSION='22.10'
 docker build --build-arg SSH_PUBLIC_KEY="${KEY_CONTENT}" -t docker-systemd:${DISTR}-${VERSION} -f ${DISTR}/${VERSION}.Dockerfile .
 
-
-
+export DISTR='ubuntu'
+export VERSION='24.04'
+docker build --build-arg SSH_PUBLIC_KEY="${KEY_CONTENT}" -t docker-systemd:${DISTR}-${VERSION} -f ${DISTR}/${VERSION}.Dockerfile .
 
 export DISTR='almalinux'
 export VERSION='10'

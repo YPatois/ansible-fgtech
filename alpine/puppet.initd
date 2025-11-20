@@ -1,5 +1,5 @@
 #!/sbin/openrc-run
-# Script de service OpenRC pour l'agent Puppet installé via Gem
+# Script de service OpenRC pour l'agent Puppet installé via Gem.
 
 # Le démon puppet va créer ce fichier PID
 pidfile="/var/run/puppet/agent.pid"

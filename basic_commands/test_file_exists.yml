@@ -1,0 +1,13 @@
+---
+- name: Test file
+  hosts: all, !local
+  gather_facts: no
+  tasks:
+  - name: Test file
+    stat:
+      path: /home/ansible/toto
+    register: toto_exists
+  - name: Creates if not
+    ansible.builtin.file:
+      path: /home/ansible/toto
+      state: absent

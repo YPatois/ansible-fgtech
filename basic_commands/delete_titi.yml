@@ -1,0 +1,15 @@
+---
+- hosts: alma10
+  become: true
+  gather_facts: no
+  tasks:
+    - name: Tester la présence du fichier /home/ansible/toto et le supprimer si absent
+      ansible.builtin.file:
+        path: /home/ansible/toto
+        state: absent
+
+    - name: Create toto file
+      copy:
+        dest: "/home/ansible/toto"
+        content: "coucou"
+      when: "'1.home' in inventory_hostname"

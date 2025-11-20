@@ -3,16 +3,12 @@
   hosts: all
   become: true
   vars:
-      text_message: " see {{ inventory_hostname }} "
-      my_name: "Herve"
+    text_message: " see {{ inventory_hostname }}"
+    my_name: "Herve"
   tasks:
     - name: copy template file
       template:
         src: motd.j2
-        dest: /etc/motd
+        dest: /etc/motd2
   tags:
     - motd_config
-
-
-
-

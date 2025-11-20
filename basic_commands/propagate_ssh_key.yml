@@ -2,6 +2,7 @@
 # resolved : https://bugzilla.redhat.com/show_bug.cgi?id=1539142
 #
 - hosts: all
+  # creation des user , sauf sur le local cad ansible-controleur
   become: true
   vars:
     myuser: justin

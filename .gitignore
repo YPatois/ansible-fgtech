@@ -1,3 +1,6 @@
+id_rsa
+github_key
+
 # Python
 __pycache__/
 *.py[cod]
@@ -215,4 +218,5 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
 id_rsa

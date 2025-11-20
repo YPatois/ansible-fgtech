@@ -2,7 +2,7 @@
 - hosts: localhost
   tasks:
      - name: get git_key
-       command: cat ../token
+       command: cat /home/ypatois/github_key
        register: git_key
      - name: Create a github Repository
        github_repo:

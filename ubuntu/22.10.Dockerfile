@@ -1,4 +1,4 @@
-FROM ubuntu:24.04
+FROM ubuntu:22.10
 
 LABEL maintainer='Anton Melekhin'
 ENV ROOT_PASSWORD="12345678"
